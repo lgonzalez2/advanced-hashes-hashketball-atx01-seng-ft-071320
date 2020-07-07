@@ -168,7 +168,9 @@ def player_stats(name)
   count = 0 
   game_hash.each do |team, team_attributes|
     team[:players].each do |attribute, value|
-      if value == 
+      if name == value
+        team[:players]
+      end
     end
   end 
 end
