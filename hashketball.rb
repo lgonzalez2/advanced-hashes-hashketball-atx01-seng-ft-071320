@@ -169,12 +169,11 @@ def player_stats(name)
   stats = {}
   
   game_hash.each do |team, team_attributes|
-    team_attributes.each do |attribute, value|
-      attribute.each_with_index do |
-      end 
+    team_attributes[:players].each_with_index do |value, index|
       
-    end
-  end 
+    end 
+  end
+  
   stats
 end
 
