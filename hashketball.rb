@@ -171,8 +171,6 @@ def player_stats(name)
   game_hash.each do |team, team_attributes|
     team_attributes.each do |attribute, value|
       
-    
-      end
     end
   end 
   stats
