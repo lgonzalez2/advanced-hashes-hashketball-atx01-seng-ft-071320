@@ -170,9 +170,9 @@ def player_stats(name)
   
   game_hash.each do |team, team_attributes|
     team_attributes.each do |attribute, value|
-        
-      if name == value[:player_name]
-        stats = team[:players][index]
+      attribute.each_with_index do |
+      end 
+      
     end
   end 
   stats
