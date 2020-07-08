@@ -253,6 +253,7 @@ def big_shoe_rebounds
         element.each do |in_key2, in_value2|
           if game_hash[key][in_key][element][:shoe] > shoe_size
             shoe_size = game_hash[key][in_key][element][:shoe] 
+          end
         end 
       end 
     end 
