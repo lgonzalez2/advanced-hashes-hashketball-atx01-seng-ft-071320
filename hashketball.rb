@@ -160,7 +160,7 @@ def team_names
   team_names_array = []
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
-      if in_value == in_key 
+      if value[in_key] == in_value
         return game_hash[key][:team_name]
       end 
     end
