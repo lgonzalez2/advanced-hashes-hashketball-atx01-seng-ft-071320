@@ -163,7 +163,7 @@ end
 
 
 
-def team_colors
+def team_colors(team)
    game_hash.each do |key, value|
     value.each do |in_key, in_value|
       if inner_value == team
