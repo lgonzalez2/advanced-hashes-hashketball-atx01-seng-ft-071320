@@ -135,7 +135,7 @@ end
 
 
 def num_points_scored(name)
-  points_scored = 0
+  points_scored = ""
   hash = game_hash
   
   hash.each do |key, value|
