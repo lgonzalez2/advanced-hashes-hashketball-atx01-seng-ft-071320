@@ -256,7 +256,3 @@ def big_shoe_rebounds
   end 
   shoe_size
 end
-
-
-
-num_points_scored("Alan Anderson")
