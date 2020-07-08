@@ -239,10 +239,7 @@ end
 
 
 def player_stats(name)
-  game_hash.each do |key, value|
-    value.each do |in_key, in_value|
-    end 
-  end 
+ 
 end
 
 
