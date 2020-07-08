@@ -196,6 +196,7 @@ def player_numbers(team)
       if inner_value == team
         return game_hash[key][:colors]
       end 
+    end
   end 
 end
 
