@@ -262,11 +262,7 @@ end
 def big_shoe_rebounds
   shoe_size = 0 
   
-  game_hash.each do |key, value|
-    value.each do |in_key, in_value|
-    end 
-  end 
-  shoe_size
+
 end
 
 
