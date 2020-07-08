@@ -164,7 +164,13 @@ end
 
 
 def team_colors
-  
+   game_hash.each do |key, value|
+    value.each do |in_key, in_value|
+      if inner_value == team
+        return game_hash[key][:colors]
+      end 
+    end
+  end 
 end
 
 
