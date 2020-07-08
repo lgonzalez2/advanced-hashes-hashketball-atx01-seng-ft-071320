@@ -142,7 +142,7 @@ def num_points_scored(name)
       if attribute == :players
         value.each do |key, stat| 
           if name == value[:player_name]
-            points_scored = value
+            points_scored = value[:points]
           end
         end 
      end 
