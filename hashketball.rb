@@ -206,9 +206,9 @@ def player_stats(name)
   stats = {}
   
   game_hash.each do |key, value|
-    team[:players].each_with_index do |value, index|
+    key[:players].each_with_index do |in_value, index|
       if name == value[:player_name]
-        stats << team[:players][index]
+        stats << key[:players][index]
       end
     end 
   end
