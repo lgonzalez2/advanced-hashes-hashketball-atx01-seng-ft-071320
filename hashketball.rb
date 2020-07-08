@@ -233,13 +233,6 @@ end
 def player_stats(name)
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
-      in_value.each do |element_hash|
-        element_hash.each do |in_key2, in_value2|
-          if in_value2 == name 
-            return element_hash
-          end 
-        end 
-      end
     end 
   end 
 end
