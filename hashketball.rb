@@ -130,6 +130,10 @@ end
 
 
 
+
+
+
+
 def num_points_scored(name)
   points_scored = 0
   hash = game_hash
@@ -148,16 +152,31 @@ def num_points_scored(name)
 end 
 
 
+
+
+
+
+
 def shoe_size
 end
+
+
+
+
+
 
 
 def team_colors
 end
 
 
+
+
+
+
 def team_names
   team_names_array = []
+  
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
       if value[in_key] == in_value && team_names_array.include?(game_hash[key][:team_name]) == false
@@ -170,17 +189,26 @@ def team_names
 end
 
 
+
+
+
+
 def player_numbers
 end
+
+
+
+
+
 
 
 def player_stats(name)
   stats = {}
   
-  game_hash.each do |team, team_attributes|
+  game_hash.each do |key, value|
     team[:players].each_with_index do |value, index|
       if name == value[:player_name]
-        stats = team[:players][index]
+        stats << team[:players][index]
       end
     end 
   end
