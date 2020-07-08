@@ -202,9 +202,9 @@ end
 
 def player_stats(name)
   game_hash.each do |key, value|
-    key[:players].each do |stats|
-      if name == key[:players][:player_name] 
-        return stats
+    value.each do |in_key, in_value|
+      if value[in_key] == name
+        value
       end 
     end 
   end 
