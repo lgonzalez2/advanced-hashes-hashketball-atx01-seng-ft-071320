@@ -143,6 +143,7 @@ def num_points_scored(name)
         value.each do |key, stat| 
           if name == stat
             points_scored = attribute[:points]
+          end
         end 
      end 
     end 
@@ -251,7 +252,6 @@ def big_shoe_rebounds
   
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
-     
     end 
   end 
   shoe_size
