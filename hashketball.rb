@@ -138,17 +138,12 @@ def num_points_scored(name)
   points_scored = 0
   hash = game_hash
   
-  hash.each do |team, team_attributes|
-    team_attributes.each do |attribute, values|
-      values.each do |inner_key, value|
-        if value[:player_name] == name
-          points_scored = value[:points]
-        end
-      end
+  hash.each do |key, value|
+    value.each do |in_key, in_value|
+      return in_key
     end 
   end 
   
-  points_scored
 end 
 
 
