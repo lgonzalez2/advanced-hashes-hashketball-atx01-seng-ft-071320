@@ -161,10 +161,12 @@ def team_names
   game_hash.each do |name|
     name.each do |in_key, in_value|
       if in_value == in_key 
-        return game_hash[:team_name]
+        team_names_array << game_hash[name][:team_name]
       end 
     end
   end
+  
+  team_names_array
 end
 
 
