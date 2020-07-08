@@ -239,7 +239,17 @@ end
 
 
 def player_stats(name)
- 
+  game_hash.each do |team, team_attributes|
+    team_attributes.each do |attribute, value|
+      if attribute == :players
+        value.each do |hash_element| 
+          if name == hash_element[:player_name]
+            return hash_element
+          end
+        end 
+     end 
+    end 
+  end 
 end
 
 
