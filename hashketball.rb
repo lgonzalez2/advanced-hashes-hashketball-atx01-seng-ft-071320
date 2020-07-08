@@ -250,7 +250,9 @@ def big_shoe_rebounds
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
       in_value.each do |element|
-        if game_hash[key][in_key][]
+        element.each do |in_key2, in_value2|
+          
+        end 
       end 
     end 
   end 
