@@ -135,17 +135,8 @@ end
 
 
 def num_points_scored(name)
-  points_scored = 0
-  hash = game_hash
-  
-  hash.each do |key, value|
-    value.each do |in_key, in_value|
-      if in_value == name
-        points_scored = key[:players][:points]
-        return points_scored
-      end
-    end 
-  end 
+  game_hash.each do 
+end 
 end 
 
 
@@ -249,13 +240,7 @@ def big_shoe_rebounds
   
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
-      in_value.each do |element|
-        element.each do |in_key2, in_value2|
-          if game_hash[key][in_key][element][:shoe] > shoe_size
-            shoe_size = game_hash[key][in_key][element][:shoe] 
-          end
-        end 
-      end 
+     
     end 
   end 
   shoe_size
