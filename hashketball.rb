@@ -141,7 +141,7 @@ def num_points_scored(name)
   hash.each do |key, value|
     value.each do |in_key, in_value|
       if name == in_value
-        points_scored = key[in_key][:points]
+        points_scored = hash[key][in_key][:points]
       end
     end 
   end 
