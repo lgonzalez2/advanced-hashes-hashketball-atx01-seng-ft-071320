@@ -198,7 +198,21 @@ end
 
 
 def player_numbers(team)
- 
+  numbers = []
+  count = 0 
+  
+ game_hash.each do |key, value|
+    value.each do |in_key, in_value|
+      if in_value == team
+        while count < game_hash[key][:players].length do 
+          numbers << game_hash[key][:players][count][:number]
+          count += 1 
+        end 
+      end 
+    end
+  end 
+  
+  numbers
 end
 
 
