@@ -160,7 +160,7 @@ def shoe_size(name)
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
       if in_value == name
-        shoe_size = game_hash[key][:players]
+        shoe_size = game_hash[key][value][:shoe]
       end 
     end
   end 
