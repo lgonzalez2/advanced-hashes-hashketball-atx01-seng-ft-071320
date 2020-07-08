@@ -247,8 +247,13 @@ end
 def big_shoe_rebounds
   shoe_size = 0 
   
-  game_hash.each do 
-end 
+  game_hash.each do |key, value|
+    value.each do |in_key, in_value|
+      in_value.each do |element|
+        if game_hash[key][in_key][]
+      end 
+    end 
+  end 
   
 end
 
