@@ -251,3 +251,4 @@ end
 
 
 
+num_points_scored("Alan Anderson")
