@@ -204,7 +204,7 @@ def player_stats(name)
   game_hash.each do |key, value|
     value.each do |in_key, in_value|
       if value[in_key] == name
-        value
+        in_key
       end 
     end 
   end 
