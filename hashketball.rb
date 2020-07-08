@@ -140,10 +140,9 @@ def num_points_scored(name)
   
   hash.each do |key, value|
     value.each do |in_key, in_value|
-      return in_key
+      binding.pry
     end 
   end 
-  
 end 
 
 
