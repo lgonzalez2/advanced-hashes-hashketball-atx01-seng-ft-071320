@@ -267,14 +267,15 @@ def big_shoe_rebounds
       if attribute == :players
         value.each do |hash_element| 
           if hash_element[:shoe] > shoe_size
-            shoe_size = 
+            shoe_size = hash_element[:shoe]
           end
         end 
      end 
     end 
   end 
+  binding.pry
 end
 
 
 
-num_points_scored("Alan Anderson")
+big_shoe_rebounds
