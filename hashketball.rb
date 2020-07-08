@@ -154,7 +154,8 @@ end
 
 
 
-def shoe_size
+def shoe_size(name)
+  
 end
 
 
@@ -230,6 +231,12 @@ def player_stats(name)
     end 
   end 
 end
+
+
+
+
+
+
 
 
 def big_shoe_rebounds
