@@ -141,8 +141,9 @@ def num_points_scored(name)
     team_attributes.each do |attribute, value|
       if attribute == :players
         value.each do |key, stat| 
+          binding.pry
           if name == stat
-            points_scored = attribute[:points]
+            points_scored = value
           end
         end 
      end 
